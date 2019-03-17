@@ -180,7 +180,7 @@ func (r Registry) Structure() []string {
 	}
 }
 
-// Returns project root, e.g.: ~/.virgo/projects/hello
+// Root returns project root, e.g.: ~/.virgo/projects/hello
 // For community projects root is nested in username/projects directory.
 func (p Project) Root() string {
 	return filepath.Join(p.root, cfgProjectsDir, p.name)
